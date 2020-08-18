@@ -5,3 +5,10 @@ def reverse_each_word(str)
   end
   new_array.join(' ')
 end
+
+def reverse_each_word(str)
+  str.split(" ").collect do |word|
+    word.reverse
+  end
+  str.join(' ')
+end
